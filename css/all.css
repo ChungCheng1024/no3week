@@ -1,0 +1,613 @@
+/* 引入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 輔色 */
+:root {
+	--primary-100: #f5fee7;
+	--primary-200: #e8fec5;
+	--primary-300: #c0fa73;
+	--primary-400: #57a203;
+	--primary-500: #477a11;
+	--neutral-0: #ffffff;
+	--neutral-100: #f8f9fa;
+	--neutral-200: #e9ecef;
+	--neutral-300: #dee2e6;
+	--neutral-400: #ced4da;
+	--neutral-500: #adb5bd;
+	--neutral-600: #6c757d;
+	--neutral-700: #495057;
+	--neutral-800: #343a40;
+	--neutral-900: #212529;
+	--danger-300: #d74f4f;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: var(--neutral-900);
+	text-decoration: none;
+	font-weight: 500;
+	display: block;
+}
+
+body {
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	color: var(--neutral-900);
+	width: 100%;
+	max-width: 1920px;
+
+}
+
+/* 通用樣式 */
+.container {
+	max-width: 1296px;
+	margin: 0 auto;
+	
+}
+
+
+.text-danger {
+	color: var(--danger-300);
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -12px;
+	margin-left: -12px;
+}
+
+
+.col-1 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12);
+}
+
+.col-2 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*2);
+}
+
+.col-3 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*3);
+}
+
+.col-4 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*4);
+}
+
+.col-5 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*5);
+}
+
+.col-7 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*7);
+}
+
+.col-9 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*9);
+}
+
+.col-10 {
+
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*10);
+}
+
+.col-11 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% / 12*11);
+}
+
+.col-12 {
+	padding-left: 12px;
+	padding-right: 12px;
+	width: 100%;
+}
+
+.h1 {
+	font-size: 40px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.h2 {
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.h3 {
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.h4 {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.h5 {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.h6 {
+	line-height: 1.2;
+
+}
+
+.textsm {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--neutral-600);
+}
+
+.text-white {
+	color: var(--neutral-0);
+}
+
+.text-neutral-600 {
+	color: var(--neutral-600);
+}
+
+.text-primary-400 {
+	color: var(--primary-400);
+}
+
+.bg-primary-100 {
+	background-color: var(--primary-100);
+}
+
+.bg-neutral-100 {
+	background-color: var(--neutral-100);
+}
+
+.p-32 {
+	padding: 32px;
+}
+
+.p-12 {
+	padding: 12px;
+}
+
+.py-8 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.py-48{
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.py-12 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.py-16 {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.py-32 {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.py-64 {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.bg-primary-200 {
+	background-color: var(--primary-200);
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-48 {
+	margin-bottom: 48px;
+}
+
+.mb-64 {
+	margin-bottom: 64px;
+}
+
+.mr-24 {
+	margin-right: 24px;
+}
+
+.mr-12 {
+	margin-right: 12px;
+}
+
+.mb-8 {
+	margin-bottom: 8px;
+}
+
+.mr-8 {
+	margin-right: 8px;
+}
+
+.mr-48 {
+	margin-right: 48px;
+}
+
+.mr-40 {
+	margin-right: 40px;
+}
+
+.pb-48 {
+	padding-bottom: 48px;
+}
+
+.py-24 {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.pr-8 {
+	padding-right: 8px;
+}
+
+.mb-4 {
+	margin-bottom: 4px;
+}
+
+.mb-12 {
+	margin-bottom: 12px;
+}
+
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+/* 頁面設定 */
+.d-flex {
+	display: flex;
+}
+
+.justify-content-sb {
+	justify-content: space-between;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.align-center {
+	align-self: center;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.endtitle {
+	font-size: 28px;
+}
+
+.quote {
+	border-radius: 12px;
+	text-align: center;
+}
+
+.info img {
+	margin-right: -110px;
+	margin-left: -110px;
+	width: 1076px;
+}
+.h48 {
+	height: 48px;
+}
+.td17{
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+.w100 {
+	width: 100%;
+}
+.line {
+	border-bottom: 1px solid var(--neutral-300);
+}
+
+.desc {
+	border-left: 1px solid var(--neutral-900);
+	padding-left: 8px;
+}
+
+.list {
+	list-style-type: disc;
+	padding-left: 24px;
+}
+
+.conceot-item {
+	padding-left: 12px;
+	border-left: 3px solid var(--neutral-300);
+}
+
+.bi {
+	padding-right: 8px;
+	vertical-align: bottom;
+}
+
+.footer {
+	text-align: center;
+}
+
+/* a:hover {
+	color: #ffffff;
+	background-color: var(--primary-400);
+	font-size: 19px;
+} */
+/* 元件 */
+.breadcrumb__item+.breadcrumb__item::before {
+	content: '/';
+	padding: 0 12px;
+	color: var(--neutral-300);
+	font-weight: 700;
+
+}
+
+.breadcrumb__item {
+	display: flex;
+	font-weight: 500;
+}
+
+.breadcrumb-link {
+	color: var(--neutral-600);
+
+}
+.text-center{
+	text-align: center;
+}
+.btn {
+	border-radius: 4px;
+	padding: 12px 24px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+.btn-dark {
+	background-color: var(--neutral-900);
+	color: var(--neutral-0);
+}
+
+.end {
+	width: 105px;
+	height: 30px;
+
+}
+
+.px-12 {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.md {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+	color: var(--neutral-900);
+}
+
+.align-center {
+	text-align: center;
+}
+
+footer {
+	gap: 4px;
+
+	border-top: 1px solid var(--neutral-300);
+}
+
+.mb-64 {
+	margin-bottom: 64px;
+}
+
+.mb-8 {
+	margin-bottom: 8px;
+}
+
+.pt-32 {
+	padding-top: 32px;
+}
+.gap-8{
+    gap: 8px;
+}
+.title-img{
+	background-image: url(/img/hero.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 152px 0;
+}
+.title-img .endtitle {
+	font-size: 28px;
+}
