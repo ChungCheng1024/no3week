@@ -14,3 +14,7 @@ main{
     margin-left: 57px;
   margin-right: 57px;
 }
+.container2{
+    max-width: 100%;
+    width: 1296px;
+}

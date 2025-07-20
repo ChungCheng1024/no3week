@@ -187,14 +187,23 @@ body {
 
 }
 
-/* 通用樣式 */
-.container {
-	max-width: 1296px;
+.container{
+	width: 1296px;
+	max-width: 100%;
 	margin: 0 auto;
-	
+	box-sizing: border-box;
 }
+/* 通用樣式 */
+.container2 {
+    width: 1296px;
+    max-width: 100%;
+	margin: 0 auto;
+    box-sizing: border-box;
+  }
 
-
+.p-24{
+	font-size: 24px;
+}
 .text-danger {
 	color: var(--danger-300);
 }
@@ -382,7 +391,12 @@ body {
 .mb-64 {
 	margin-bottom: 64px;
 }
-
+.mr48{
+	margin-right: 48px;
+}
+.mr40{
+	margin-right: 40px;
+}
 .mr-24 {
 	margin-right: 24px;
 }
@@ -468,7 +482,10 @@ body {
 .endtitle {
 	font-size: 28px;
 }
-
+.m17{
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
 .quote {
 	border-radius: 12px;
 	text-align: center;
@@ -581,10 +598,11 @@ body {
 	text-align: center;
 }
 
-footer {
+.footer {
 	gap: 4px;
 
-	border-top: 1px solid var(--neutral-300);
+	border-top: 1px solid var(--neutral-100);
+	background-color: var(--neutral-100);
 }
 
 .mb-64 {
@@ -610,4 +628,7 @@ footer {
 }
 .title-img .endtitle {
 	font-size: 28px;
+}
+.p12{
+	padding: 12px;
 }
