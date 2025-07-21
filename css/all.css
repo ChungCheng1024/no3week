@@ -1067,6 +1067,13 @@ body {
   font-size: 18px;
 }
 
+a i {
+color: var(--neutral-900);
+}
+
+.icon-18px{
+  font-size: 18px;
+}
 @media screen and (max-width: 576px) {
   .product-action {
     display: flex;
