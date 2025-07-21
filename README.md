@@ -1,4 +1,4 @@
-# URBNSTEP 品牌故事切版教學
+# URBNSTEP 品牌故事切版介紹
 
 以下將以 **story.html** 與 `css/all.css` 為例，示範如何從零開始完成品牌故事頁的 RWD 版型。文章會依照實際切版流程拆解，讓初學者也能快速了解每一步的目的。
 
@@ -61,3 +61,4 @@
 
 掌握以上規則即可自由組合版面，快速完成具備 RWD 的品牌故事頁。
 
+ps:參考助教直播與同學的utility class命名法 並了解格線系統 https://github.com/zuien-kk/2025-week3
