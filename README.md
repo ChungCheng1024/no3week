@@ -61,4 +61,4 @@
 
 掌握以上規則即可自由組合版面，快速完成具備 RWD 的品牌故事頁。
 
-ps:參考助教直播與同學的utility class命名法 並了解格線系統 https://github.com/zuien-kk/2025-week3
+ps:參考助教直播與同學的https://github.com/zuien-kk/2025-week3 utility class命名法 並了解格線系統 
