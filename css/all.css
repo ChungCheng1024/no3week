@@ -1,18 +1,13 @@
 
 /* 以下是針對原本 CSS 的 OOCSS 重構範例 */
-
 @charset "UTF-8";
-
 /* base reset & 字體 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 /* 引入字體 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 html,
 body,
 div,
